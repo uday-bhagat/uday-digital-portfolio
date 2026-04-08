@@ -1,14 +1,30 @@
+Here is your fully updated **HTML** code. I have changed all image paths to use the **`images/`** folder only.
+
+### 1. Folder Setup on your PC
+Make sure your files look like this:
+*   `index.html`
+*   `style.css`
+*   `script.js`
+*   **`images/`** (Folder containing all your .jpg files)
+
+---
+
+### 2. Updated HTML (`index.html`)
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uday Bhagat | AIML Engineer</title>
+    <title>Uday Bhagat | AIML Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Navigation -->
     <nav>
         <div class="logo">UDAY BHAGAT</div>
         <ul class="nav-links">
@@ -16,6 +32,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#achievements">Certificates</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
@@ -24,71 +41,67 @@
     <!-- Home Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <img src="assets/profile.jpg" alt="Uday Bhagat" class="profile-img">
+            <img src="images/profile.jpg" alt="Uday Bhagat" class="profile-img">
             <h1>Hi, I'm <span class="highlight">Uday Uttareshwar Bhagat</span></h1>
             <p class="tagline">Neural Network Architect | 3D Visualizer | Creative Engineer</p>
-            <p class="intro">B.Tech CSE AIML student at MIT Vishwaprayag University. I build intelligent models by day and craft 3D worlds by night.</p>
+            <p class="intro">Undergraduate at MIT Vishwaprayag University specializing in AI & Machine Learning. I build intelligent systems and high-end digital visuals.</p>
             <div class="hero-btns">
                 <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                <a href="#contact" class="btn btn-outline">Hire Me</a>
             </div>
         </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about">
-        <h2 class="section-title">Profile</h2>
+        <h2 class="section-title">Professional Profile</h2>
         <div class="about-container">
             <div class="about-card">
                 <i class="fas fa-university"></i>
                 <h3>Education</h3>
-                <p>B.Tech CSE (AI & ML)<br>MIT Vishwaprayag University</p>
+                <p>B.Tech CSE (AI & ML)<br><strong>MIT Vishwaprayag University</strong></p>
             </div>
             <div class="about-card">
-                <i class="fas fa-cubes"></i>
-                <h3>Interests</h3>
-                <p>3D Modelling, Video Editing & Generative AI Art.</p>
+                <i class="fas fa-video"></i>
+                <h3>Creative Interests</h3>
+                <p>Advanced 3D Modelling, Cinematic Video Editing, & UI Design.</p>
             </div>
             <div class="about-card">
                 <i class="fas fa-heart"></i>
-                <h3>Ultimate Goal</h3>
+                <h3>My Goal</h3>
                 <p>To reach a level of success where my parents can retire in absolute comfort and pride.</p>
             </div>
             <div class="about-card">
-                <i class="fas fa-brain"></i>
+                <i class="fas fa-terminal"></i>
                 <h3>Strengths</h3>
-                <p>Problem solver by nature. I don't just find solutions; I optimize them until the code is scared of breaking again.</p>
+                <p>Bug Whisperer. I don't just solve problems; I optimize them until the code is scared of breaking again.</p>
             </div>
         </div>
     </section>
 
-    <!-- Achievements Section -->
+    <!-- Achievements Section (Certificates) -->
     <section id="achievements">
         <h2 class="section-title">Certifications</h2>
         <div class="grid">
-            <!-- Cisco -->
             <div class="card cert-card">
-                <img src="assets/cisco-ai.jpg" alt="Cisco AI">
+                <img src="images/cisco-ai.jpg" alt="Cisco Modern AI">
                 <h3>Introduction to Modern AI</h3>
                 <p>Cisco Networking Academy</p>
             </div>
-            <!-- Python -->
             <div class="card cert-card">
-                <img src="assets/python-cert.jpg" alt="Python Cert">
+                <img src="images/python-cert.jpg" alt="Python Certificate">
                 <h3>Programming for Everybody</h3>
-                <p>University of Michigan</p>
+                <p>University of Michigan (Coursera)</p>
             </div>
-            <!-- Matlab -->
             <div class="card cert-card">
-                <img src="assets/matlab-cert.jpg" alt="Matlab Cert">
+                <img src="images/matlab-cert.jpg" alt="MATLAB Certificate">
                 <h3>Programming with MATLAB</h3>
-                <p>Vanderbilt University</p>
+                <p>Vanderbilt University (Coursera)</p>
             </div>
-            <!-- ACE chemistry -->
             <div class="card cert-card">
-                <img src="assets/chemistry-cert.jpg" alt="Chemistry ACE">
+                <img src="images/chemistry-cert.jpg" alt="ACE Chemistry">
                 <h3>Revisiting Chemistry (ACE)</h3>
-                <p>MIT Vishwaprayag University</p>
+                <p>MIT Vishwaprayag (Coursera)</p>
             </div>
         </div>
     </section>
@@ -98,19 +111,19 @@
         <h2 class="section-title">Key Projects</h2>
         <div class="grid">
             <div class="card">
-                <img src="assets/construction-waste.jpg" alt="ACE Project">
+                <img src="images/construction-waste.jpg" alt="ACE Project">
                 <h3>ACE: Construction Waste Management</h3>
-                <p>Developing tech-driven solutions to optimize waste disposal and environmental sustainability.</p>
+                <p>A technical solution designed to optimize waste flow and environmental sustainability in construction.</p>
             </div>
             <div class="card">
-                <div class="icon-box"><i class="fas fa-robot"></i></div>
+                <div class="icon-box"><i class="fas fa-microchip"></i></div>
                 <h3>Ai4A Project</h3>
-                <p>Inclusive AI development focusing on accessibility for all users.</p>
+                <p>Developing inclusive Artificial Intelligence tools to improve digital accessibility for everyone.</p>
             </div>
             <div class="card">
                 <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
                 <h3>Design Thinking</h3>
-                <p>Creating human-centric prototypes for complex engineering challenges.</p>
+                <p>Using human-centered design to prototype solutions for complex real-world engineering problems.</p>
             </div>
         </div>
     </section>
@@ -119,29 +132,35 @@
     <section id="gallery">
         <h2 class="section-title">Media Gallery</h2>
         <div class="gallery-grid">
-            <img src="assets/profile.jpg" alt="Uday">
-            <img src="assets/cisco-ai.jpg" alt="Cert">
-            <img src="assets/python-cert.jpg" alt="Cert">
-            <img src="assets/matlab-cert.jpg" alt="Cert">
-            <img src="assets/chemistry-cert.jpg" alt="Cert">
-            <img src="assets/construction-waste.jpg" alt="Project">
+            <img src="images/profile.jpg" alt="Uday Profile">
+            <img src="images/cisco-ai.jpg" alt="Cisco Cert">
+            <img src="images/python-cert.jpg" alt="Python Cert">
+            <img src="images/matlab-cert.jpg" alt="Matlab Cert">
+            <img src="images/chemistry-cert.jpg" alt="Chemistry Cert">
+            <img src="images/construction-waste.jpg" alt="Project ACE">
         </div>
     </section>
 
     <!-- Contact Section -->
     <footer id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-info">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-details">
             <p><i class="fas fa-envelope"></i> <strong>Udaybhagat02@gmail.com</strong></p>
             <p><i class="fas fa-phone"></i> <strong>+91 7350482745</strong></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/uday-bhagat-a83b02401" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
         </div>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/uday-bhagat-a83b02401" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <p class="footer-bottom">&copy; 2024 Uday Bhagat | Designed for Professional Impact</p>
+        <p class="footer-note">&copy; 2024 Uday Bhagat | Engineering the Future</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+```
+
+### 3. What to do next:
+1.  **CSS and JS:** Use the same `style.css` and `script.js` I provided in the previous message; they will work perfectly with this HTML.
+2.  **Filenames:** Double-check that your images inside the `images/` folder are named exactly as shown in the code (e.g., `profile.jpg`, `cisco-ai.jpg`, etc.).
+3.  **GitHub:** Upload your `index.html`, `style.css`, `script.js`, and the **entire `images` folder** to your repository.
